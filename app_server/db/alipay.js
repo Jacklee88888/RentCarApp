@@ -1,0 +1,22 @@
+//? 引入SDK
+const AlipaySdk = require ('alipay-sdk').default
+const alipaySdk = new AlipaySdk({
+    //AppId
+    appId: '2021000121693615',
+    //签名算法
+    // signType:'RSA2',
+    signType:'RSA2',
+    // 秘钥类型
+    keyType:'PKCS8',
+     //网关
+     gateway:'https://openapi.alipaydev.com/gateway.do',
+    //支付宝公钥
+    ailpayPublicKey:'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0mgnQlTNG6Anjp1vtcb142OtU12aBca3lyTu5lwEhgL+nJzlnH4lYbxwa4ES4ZSFx9vtJdcK1YgBz4AbQ0eskjU8oLI09Y/n0F52zODQi/qpQI1uU5PpokDg/BcOzKpDNgJ2GNiI7swLdf1DhCRuul0ByErM5sVFI3+S/LN4RoXJHRYbo9LnhWYorGIxQMyyykFHw1SO6Uyd8X8ej+HYM85bO04GUxa4wLx0fly6eHQU5xORXBDM2IDitdwFpnHhyqeZ6N85hbm/2kyh/lcxkZEJcjG/1LOGo7MlB8nO14Jm6Uq4/jmFjk5E0NDBIDk+Dchlp1mzcHqX57PffAyUiQIDAQAB',
+
+    //应用秘钥
+    privateKey:'MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCJwbuX6tHw2etY/fjBiZJrDcWAOFXrJoIIIo/wnW6Lg41BgkbW78XIDzGPo4h/lWFZB9PsCQf1nxcv56569PSsBZmVbnu9U/AGErxNb3qXLiZ5DgtsGjCVo4C/2kxejc6/cobB2oabWO9/VKhw96TqLM5ATCAXNJl7ay21vJxSYyFBu3nhhtzo+fC3n6B/8mmsyrmeOfkXBSUxFpGUN32WGWOT4cgy3ooofDuFXAqDYegTpjgFAPN7Tm3dR08c0gSH4z8CidxEIs2jY4QdfbjkpJa0Cf+Hj6jRhvwzAopmeWffsQqSWvM+/XIzDu7QDXR6yWT9nTPLVF4M353swx2zAgMBAAECggEAIo74eccN/ecddIjaM+tIURT2XBFF9KUHb/UDuTA1gEhzUmDVVqx2KJcvLsKuxpr5/fTJxGgLmCHeFkV/7xauns0U13kND9UT3OIsXRy/W1fXjPzp/qefUpre/MJN8FaQ7FRV3CHvLN+lzYK2cwidVaYB4/10+31Vl7GumO4FJWGbr7x4zYit5VZx1w0qNtXwXydMvt7q/E1CrmO+Z5Oq7BPala8idllE6Xsfe3nMNSgGLidO9Zt2NDYztThn6cpXyt4ROyDGWMUGsz8SzX1Fkf1dfelb2whQUnCYaYU69kPfRhtClLfIs4TVxJkALpm6+oLe6XsbcKCPpO+QK3ghgQKBgQDasw1A33ltWQ6iugbVYEKSGrqzCfphUrQ9PAQA0VmWY9jglRdqE7fwHHpLbXNVtueiDtd2WZard9TcTZ2BBoKAcpAc4Gwg0Z5Dmo6lg1JnjUjuTp//b+xDOOHHaMU31O+2HIT25p3uEih+hJSBgHX3V6xrOjqnIL2dCNPRL/KswQKBgQChQIcxnJ3ZOb6xA2uWUrXJckWnOH6oLNLYTGsSwc6O3fB/m6fIVp5Ga3zC2c7lDa9FeJWwC3MQ8dOppIbEwdW6OESStRLTQyFAlSjLqMn/xvSGUqdObE9PEbG6Ou5i8PlcJ4CVqA7WoRNHBoTw1A3dZGtqNdSLdLq35i2SPMlDcwKBgHm6e8AGI1JH5auRm8gcojEsi4qoHSMao5QJ2biSzii1PrwSgEvc2d7eGvvs2et1uQws8qS/TOv38RUGZoqwkubn3WsVR1olEtBSMN/TboSQ0W1Dei71ny3zdUhG+q8O6LYWvbOnvXQLy1pQdVB3rjGULTYp3Qe1Y5UKmsuuwoaBAoGAJpy6AsI69gIizGZCQ+uoRgWL8j/P7FtXXZ3m4cXwvTsd1KCkK4+6NKiWZl4bcbO2LY9zYIVNV1hg07Vm5AR6Ni41FWAwks/3TWyqKSJQxGOSt/tgvqGm2AsnoK1t2dlUDKIU40Er1G8bm51PBg/xBft+0R70tzQLZe/DJ8pQc0sCgYArJWQo9LG3DmSUCIPL6sXllArs4eU3fYk/aykW4BKUylTM5Agb7yRc/E+66A/y1l5+/+NOvDS8FelycdkotsrCr/CxPAnj6FElVCr/v8ZVaFNfjvviIbsvsQzfo++9HPYtAo7jtcgotjqhbuFT8dpGSCVZwvof21RFtP78WFPCIw==' ,
+   
+
+})
+
+module.exports = alipaySdk;
